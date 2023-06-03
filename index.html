@@ -16,10 +16,173 @@
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+  <header class="header container">
+      
+      <div class="header__title">
+        <h1>Social Media Dashboard 🔥🔥🔥🔥🔥</h1>
+        <span>Total Followers: 23,004</span>
+      </div>
+      
+      <fieldset class="header__toggle">
+          <label for="dark">Dark mode</label>          
+          <div class="header__toggle__warpper">
+              <input type="radio" name="theme" id="light">
+              <input type="radio" name="theme" id="dark">
+          </div>
+          <label for="light">Dark mode off</label>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </fieldset>
+  </header>
   
+  <main>
+    <section class="container cards">
+      <div class="card card--facebook">
+        <div class="card__platform">
+          <img src="./images/icon-facebook.svg" alt="icon-facebook" class="card__icon">
+          <div class="card__username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__count">1987</div>
+          <div class="card__lable">FOLLOWERS</div>
+        </div>
+        <div class="card__change">
+          <img src="./images/icon-up.svg" alt="icon-up">
+          <div class="card__number">12 Today</div>
+        </div>
+      </div>
+      
+      <div class="card card--twitter">
+        <div class="card__platform">
+          <img src="./images/icon-twitter.svg" alt="icon-twitter" class="card__icon">
+          <div class="card__username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__count">1044</div>
+          <div class="card__lable">FOLLOWERS</div>
+        </div>
+        <div class="card__change">
+          <img src="./images/icon-up.svg" alt="icon-up">
+          <div class="card__number">99 Today</div>
+        </div>
+      </div>
+
+      <div class="card card--insta">
+        <div class="card__platform">
+          <img src="./images/icon-instagram.svg" alt="icon-instagram" class="card__icon">
+          <div class="card__username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__count">11k</div>
+          <div class="card__lable">FOLLOWERS</div>
+        </div>
+        <div class="card__change">
+          <img src="./images/icon-up.svg" alt="icon-up">
+          <div class="card__number">1099 Today</div>
+        </div>
+      </div>
+
+      <div class="card card--youtube">
+        <div class="card__platform">
+          <img src="./images/icon-youtube.svg" alt="icon-youtube" class="card__icon">
+          <div class="card__username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__count">8239</div>
+          <div class="card__lable">FOLLOWERS</div>
+        </div>
+        <div class="card__change">
+          <img src="./images/icon-down.svg" alt="icon-down">
+          <div class="card__number">144 Today</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container">
+      <h2>Overview - Today</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card_subtitle">Page view</div>
+          <img src="./images/icon-facebook.svg" alt="icon-facebook">
+          <div class="card__number">87</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-up.svg" alt="icon-up">
+            <div class="card__number">3%</div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card_subtitle">Likes</div>
+          <img src="./images/icon-facebook.svg" alt="icon-facebook">
+          <div class="card__number">52</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-down.svg" alt="icon-down">
+            <div class="card__number">2%</div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card_subtitle">Likes</div>
+          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+          <div class="card__number">5462</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-up.svg" alt="icon-up">
+            <div class="card__number">2257%</div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card_subtitle">Profile Views</div>
+          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+          <div class="card__number">52k</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-up.svg" alt="icon-up">
+            <div class="card__number">1375%</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card_subtitle">Retweets</div>
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <div class="card__number">117</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-up.svg" alt="icon-up">
+            <div class="card__number">303%</div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card_subtitle">Likes</div>
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <div class="card__number">507</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-up.svg" alt="icon-up">
+            <div class="card__number">553%</div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card_subtitle">Likes</div>
+          <img src="./images/icon-youtube.svg" alt="icon-youtube">
+          <div class="card__number">1407</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-down.svg" alt="icon-down">
+            <div class="card__number">19%</div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card_subtitle">Total Views</div>
+          <img src="./images/icon-youtube.svg" alt="icon-youtube">
+          <div class="card__number">1407</div>
+          <div class="card__change">
+            <img  class="card__icon" src="./images/icon-down.svg" alt="icon-down">
+            <div class="card__number">12%</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
