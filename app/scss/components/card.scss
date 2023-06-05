@@ -1,0 +1,101 @@
+@use '../util' as *;
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+
+    @include breakpoint-up(medium){
+        grid-template-columns: 1fr 1fr;
+
+    }
+    @include breakpoint-up(large){
+        grid-template-columns: repeat(4,1fr);
+
+    }
+
+}
+
+.card{
+    background-color: var(--dark-card-bg);
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5625rem;
+    cursor: pointer;
+//element
+    &__platform{
+        margin: .3125rem auto 1.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    &__icon{
+        margin-right: .5rem;
+    }
+    &__followers{
+        margin:   0 auto 1.5625rem auto;
+    }
+    &__count{
+        font-size: 56px;
+        font-weight: 700;
+    }
+    &__lable, &__username{
+        color: var(--dark-subtext);
+        margin-bottom: .25rem;
+        font-size: 12px;
+    }
+    &__change{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__number{
+        font-size: .75rem;
+    }
+//modifiers          
+    &__number--up{
+        color: var(--limegreen);
+    }
+    &__number--down{
+        color: var(--brightred);
+    }
+    &--facebook{
+        border-top: .2rem solid var(--facebook);
+    }
+    &--youtube{
+        border-top: .2rem solid var(--youtube);
+    }
+    &--twitter{
+        border-top: .2rem solid var(--twitter);
+    }
+    &--instagram{
+        border-image-source:var(--instagram);
+        border-top: .2rem solid ;
+        border-image-slice: 40;
+    }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    gap: 1.4375rem;
+    
+    .card__subtitle{
+        color: var(--dark-subtext);
+        font-size: 0.875rem;
+    }
+    img, .card__change{
+        justify-self: end;
+    }
+    .card__change, .card__count{
+        align-self: end;
+    }
+    .card__count{
+        font-size: 2rem;
+    }
+    
+}

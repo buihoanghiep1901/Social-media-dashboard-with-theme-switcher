@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+.container{
+    display: block;
+    max-width: 69.375rem;
+    margin:2.25rem auto 2.875rem;
+    padding: 0 1.5625rem;
+}
+
+.container h2{
+    margin-bottom: 1.5rem;
+}
+

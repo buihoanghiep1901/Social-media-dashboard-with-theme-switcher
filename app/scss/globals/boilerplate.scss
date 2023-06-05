@@ -1,14 +1,21 @@
-
+html{
+    font-size: 100%;   
+    box-sizing: border-box;
+}
 
 *,
 *::after,
 *::before{
-    font-size: 100%;   
+    box-sizing: inherit;
+    border: 0;
+}
+
+body{
     font-family: var(--font-inter);
-    box-sizing: border-box;
+    color: var(--dark-text);
+    background-color: var(--dark-bg);
     margin: 0;
     padding: 0;
     text-decoration: none;
-    border: 0;
 }
 
