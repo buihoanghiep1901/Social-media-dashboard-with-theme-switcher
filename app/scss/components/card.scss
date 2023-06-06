@@ -24,6 +24,10 @@
     margin: 0 auto;
     padding: 1.5625rem;
     cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+    &:hover{
+        background-color: var(--dark-top-bg);
+    }
 //element
     &__platform{
         margin: .3125rem auto 1.75rem;
@@ -86,16 +90,16 @@
     
     .card__subtitle{
         color: var(--dark-subtext);
-        font-size: 0.875rem;
+        font-size: .875rem;
+    }
+    .card__count{
+        font-size: 32px;
     }
     img, .card__change{
         justify-self: end;
     }
     .card__change, .card__count{
-        align-self: end;
-    }
-    .card__count{
-        font-size: 2rem;
+         align-self: end;
     }
     
 }

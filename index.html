@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | QR code component</title>
+  <title>Social media HTML/SCSS</title>
   
   <link rel="stylesheet" href="/dist/style.css" />
   <script defer src="/dist/script.js"></script>
@@ -29,11 +29,12 @@
       
       <fieldset class="header__toggle">
           <label for="dark">Dark mode</label>          
-          <div class="header__toggle__warpper">
+          <div class="header__toggle__wrapper">
+              <input type="radio" name="theme" id="dark" checked>
               <input type="radio" name="theme" id="light">
-              <input type="radio" name="theme" id="dark">
+              <span aria-hidden="true" class="header__toggle__button"></span>
           </div>
-          <label for="light">Dark mode off</label>
+          <label style="display: none;" for="light">Dark mode off</label>
 
       </fieldset>
   </header>
