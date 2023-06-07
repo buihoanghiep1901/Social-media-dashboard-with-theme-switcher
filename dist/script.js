@@ -1,2 +1,2 @@
-"use strict";console.log("HELLO");
+"use strict";var darkButton=document.getElementById("dark"),lightButton=document.getElementById("light"),radioButtons=document.querySelectorAll(".header__toggle__wrapper input"),setDarkMode=function(){document.querySelector("body").classList="dark"},setLightMode=function(){document.querySelector("body").classList="light"};radioButtons.forEach((function(t){t.addEventListener("click",(function(t){darkButton.checked?setDarkMode():setLightMode()}))}));
 //# sourceMappingURL=script.js.map
